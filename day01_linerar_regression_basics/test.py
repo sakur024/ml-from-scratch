@@ -4,7 +4,7 @@ x = 1
 y = 7
 lr = 0.1
 
-for step in range(10):
+for step in range(10000):
     y_pred = w * x + b
     error = y_pred - y
 
@@ -12,3 +12,5 @@ for step in range(10):
     b = b - lr * error
 
     print(step, w, b)
+
+print(w*x+b)
